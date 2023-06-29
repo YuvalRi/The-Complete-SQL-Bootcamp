@@ -26,8 +26,14 @@ def question_4():
 def question_5():
     cur.execute("SELECT * FROM cd.facilities WHERE name LIKE '%Tennis%'")
 
-def quesion_6():
+def question_6():
     cur.execute("SELECT * FROM cd.facilities WHERE name LIKE '%2'")
+
+def question_7():
+    cur.execute("SELECT memid, surname, firstname, joindate FROM cd.members WHERE joindate > '2012-09-01'")
+
+def question_8():
+    cur.execute("SELECT DISTINCT surname FROM cd.members ORDER BY surname LIMIT 10")
 
 
 def main():
@@ -36,7 +42,9 @@ def main():
     #question_3()
     #question_4()
     #question_5()
-    #quesion_6()
+    #question_6()
+    #question_7()
+    question_8()
 
     # Command for printing the output
     rows = cur.fetchall()
