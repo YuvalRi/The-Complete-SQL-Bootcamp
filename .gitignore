@@ -4,3 +4,4 @@ l_venv
 secret_info.json
 requirements.txt
 *.pyc
+pc_venv
