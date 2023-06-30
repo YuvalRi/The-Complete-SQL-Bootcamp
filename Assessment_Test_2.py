@@ -48,12 +48,6 @@ def question_8(cur):
                     ORDER BY surname 
                     LIMIT 10""")
 
-def question_8(cur):
-    cur.execute("""SELECT DISTINCT surname 
-                    FROM cd.members 
-                    ORDER BY surname 
-                    LIMIT 10""")
-
 def question_9(cur):
     cur.execute("""SELECT joindate, surname 
                     FROM cd.members 
